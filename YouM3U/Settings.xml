@@ -1,0 +1,40 @@
+<document>
+    <listTemplate>
+        <list>
+            <header>
+                <title>Settings</title>
+            </header>
+            <section>
+                <listItemLockup>
+                    <title>Configuration</title>
+                    <relatedContent>
+                        <lockup actionID="Button_Configure">
+                            <img src="http://aik.synology.me/images/youm3u/about.png" width="857" height="482" />
+                            <title>Configure your List</title>
+                            <description>A brief description for the first movie should go here.</description>
+                        </lockup>
+                    </relatedContent>
+                </listItemLockup>
+                <listItemLockup>
+                    <title>Refresh</title>
+                    <relatedContent>
+                        <lockup actionID="Alert_reloadData">
+                            <title>Refresh</title>
+                            <description>Refresh your list.</description>
+                        </lockup>
+                    </relatedContent>
+                </listItemLockup>
+                <listItemLockup>
+                    <title>About</title>
+                    <relatedContent>
+                        <lockup>
+                            <img src="http://aik.synology.me/images/youm3u/about.png" width="857" height="482" />
+                            <title>About</title>
+                            <description>About our...</description>
+                        </lockup>
+                    </relatedContent>
+                </listItemLockup>
+            </section>
+        </list>
+    </listTemplate>
+</document>
