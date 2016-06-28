@@ -15,7 +15,6 @@ import M3U8Kit2
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
-    var user: AVUser?
     var tabbar: KitchenTabBar?
     
     func application(application: UIApplication,
@@ -23,78 +22,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     {
         _ = prepareMyKitchen(launchOptions)
         
-        AVOSCloud.setApplicationId("0kdimTBPXBoAlr1vCQSzuSAK-gzGzoHsz", clientKey: "BQYpqAYaoGjIm1xRFiIjMYIw")
-        //AVOSCloud.setServiceRegion(AVServiceRegion.US)
-        
-        initUser()
+        loadData();
         
         return true
     }
     
-    func initUser() {
-        
-        if let currentUser = AVUser.currentUser() {
-            // 已注册用户
-            self.user = currentUser
-            self.reloadData()
-            AVUser.logOut()
-        }else{
-            
-            let keychain = KeychainPreferences.sharedInstance
-            if nil == keychain.stringForKey("userIdentifier") {
-                let userIdentifier = UIDevice.currentDevice().identifierForVendor?.UUIDString.componentsSeparatedByString("-")[3]
-                keychain["userIdentifier"] = userIdentifier
-            }
-            
-            guard let userIdentifier = keychain.stringForKey("userIdentifier") else {
-                Kitchen.navigationController.presentViewController(UIAlertController(title: "No identifier", message: "", preferredStyle:.Alert), animated: true) { }
-                return
-            }
-            
-            AVUser.logInWithUsernameInBackground(userIdentifier, password: userIdentifier, block: { (user, error) in
-                if error == nil {
-                    self.user = user
-                    self.reloadData()
-                }else{
-                    let user = AVUser()
-                    user.username = userIdentifier
-                    user.password = userIdentifier
-                    
-                    user.signUpInBackgroundWithBlock({ (successed, error) in
-                        if (successed) {
-                            self.user = user
-                            let alert = AlertRecipe(title: "Success signup", description: "Please visit http://aik.synology.me/\(userIdentifier)\nConfigure your list of m3u first", buttons: [AlertButton(title: "OK", actionID: "Alert_reloadData")], presentationType: PresentationType.Modal)
-                            
-                            Kitchen.serve(recipe:alert)
-                        }else{
-                            keychain.removeObjectForKey("userIdentifier")
-                            let alert = AlertRecipe(title: "Error signup", description: "\(error.localizedDescription)\nPlease try agine.", buttons: [AlertButton(title: "OK", actionID: "Alert_initUser")], presentationType: PresentationType.Modal)
-                            Kitchen.serve(recipe:alert)
-                        }
-                    })
-                }
-            })
-        }
-    }
-    
-    func reloadData() {
+    func loadData() {
 
         let model: M3U8PlaylistModel?
         do {
-            try model = M3U8PlaylistModel(URL: "http://7xso70.com1.z0.glb.clouddn.com/H_20160606.m3u8")
+            try model = M3U8PlaylistModel(URL: "http://localhost:8002/playlist.m3u8")
         } catch {
             print(error)
             model = nil
         }
         
         if let list = model {
-            print(list.segmentNamesForPlaylist(list.mainMediaPl ))
-            print(list.segmentNamesForPlaylist(list.audioPl ))
+            print( list.segmentNamesForPlaylist( list.mainMediaPl ))
+            print( list.segmentNamesForPlaylist( list.audioPl ))
         }
         
         if let tabbar = self.tabbar {
             Kitchen.reloadTab(atIndex: 0, recipe: tabbar)
-            
         } else{
             self.tabbar = KitchenTabBar(items:
                 [CatalogTab(),SearchTab(),SettingsTab()]
@@ -174,10 +123,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     Kitchen.dismissModal()
                     let todo = actionComponents[1]
                     switch todo {
-                    case "initUser":
-                        self.initUser()
-                    case "reloadData":
-                        self.reloadData()
+                    case "loadData":
+                        self.loadData()
                     default:
                         return
                     }
@@ -243,12 +190,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             Kitchen.serve(recipe: catalog)
         }
         private var catalog: CatalogRecipe {
-            
-            let query = AVUser.query()
-            query.includeKey("M3UList")
-            query.findObjectsInBackgroundWithBlock { (objects, error) in
-                
-            }
             
             let banner = "Movie"
             let thumbnailUrl = ""//NSBundle.mainBundle().URLForResource("item", withExtension: "jpg")!.absoluteString

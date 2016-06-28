@@ -1,11 +1,4 @@
 
-var AV = require('leancloud-storage');
-var APP_ID = '0kdimTBPXBoAlr1vCQSzuSAK-gzGzoHsz';
-var APP_KEY = 'BQYpqAYaoGjIm1xRFiIjMYIw';
-AV.init({
-        appId: APP_ID,
-        appKey: APP_KEY
-        });
 
 App.onLaunch = function(options) {
     

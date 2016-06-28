@@ -15,7 +15,6 @@
 		F65F86E91D225D7500D2CF29 /* QRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65F86E81D225D7500D2CF29 /* QRCode.swift */; };
 		F65F86EE1D225D8100D2CF29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65F86EA1D225D8100D2CF29 /* AppDelegate.swift */; };
 		F65F86EF1D225D8100D2CF29 /* AVPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65F86EB1D225D8100D2CF29 /* AVPlayerController.swift */; };
-		F65F86F01D225D8100D2CF29 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65F86EC1D225D8100D2CF29 /* Model.swift */; };
 		F65F86F11D225D8100D2CF29 /* MySearchRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65F86ED1D225D8100D2CF29 /* MySearchRecipe.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,7 +31,6 @@
 		F65F86E81D225D7500D2CF29 /* QRCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QRCode.swift; path = COCNTV/QRCode.swift; sourceTree = SOURCE_ROOT; };
 		F65F86EA1D225D8100D2CF29 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = COCNTV/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
 		F65F86EB1D225D8100D2CF29 /* AVPlayerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AVPlayerController.swift; path = COCNTV/AVPlayerController.swift; sourceTree = SOURCE_ROOT; };
-		F65F86EC1D225D8100D2CF29 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Model.swift; path = COCNTV/Model.swift; sourceTree = SOURCE_ROOT; };
 		F65F86ED1D225D8100D2CF29 /* MySearchRecipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MySearchRecipe.swift; path = COCNTV/MySearchRecipe.swift; sourceTree = SOURCE_ROOT; };
 		F69DB0191CFE7A5500ADA2FE /* COCNTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = COCNTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -101,7 +99,6 @@
 			children = (
 				F65F86EA1D225D8100D2CF29 /* AppDelegate.swift */,
 				F65F86EB1D225D8100D2CF29 /* AVPlayerController.swift */,
-				F65F86EC1D225D8100D2CF29 /* Model.swift */,
 				F65F86ED1D225D8100D2CF29 /* MySearchRecipe.swift */,
 				F6446FD21CFEB597004DDC01 /* Utils */,
 				F6446FD71CFEC2BC004DDC01 /* Supporting Files */,
@@ -252,7 +249,6 @@
 				F65F86F11D225D8100D2CF29 /* MySearchRecipe.swift in Sources */,
 				F65F86EF1D225D8100D2CF29 /* AVPlayerController.swift in Sources */,
 				F65F86E91D225D7500D2CF29 /* QRCode.swift in Sources */,
-				F65F86F01D225D8100D2CF29 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
