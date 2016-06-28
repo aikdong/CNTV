@@ -25,9 +25,12 @@ class M3U: AVObject, AVSubclassing {
         }
     }
     
-    var owner: AVUser?
-    var cover : AVFile?
     var url: String!
+    var type: String?
+    var group: String?
+    var name : String?
+    var cover : AVFile?
+    
     var likes: Int = 0
     
 }

@@ -3,3 +3,4 @@
 //
 
 #import <AVOSCloud.h>
+#import <M3U8Kit2/M3U8Kit.h>

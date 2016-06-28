@@ -10,11 +10,13 @@ import UIKit
 import TVMLKitchen
 import JavaScriptCore
 import Prephirences
+import M3U8Kit2
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var user: AVUser?
+    var tabbar: KitchenTabBar?
     
     func application(application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool
@@ -35,7 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             // 已注册用户
             self.user = currentUser
             self.reloadData()
-            
+            AVUser.logOut()
         }else{
             
             let keychain = KeychainPreferences.sharedInstance
@@ -57,7 +59,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     let user = AVUser()
                     user.username = userIdentifier
                     user.password = userIdentifier
-                    user.email = "\(userIdentifier)@aik.synology.me"
                     
                     user.signUpInBackgroundWithBlock({ (successed, error) in
                         if (successed) {
@@ -77,13 +78,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func reloadData() {
+
+        let model: M3U8PlaylistModel?
+        do {
+            try model = M3U8PlaylistModel(URL: "http://7xso70.com1.z0.glb.clouddn.com/H_20160606.m3u8")
+        } catch {
+            print(error)
+            model = nil
+        }
         
-        // SingIn
-        let tabbar = KitchenTabBar(items:
-            [CatalogTab(),SearchTab(),SettingsTab()]
-        )
+        if let list = model {
+            print(list.segmentNamesForPlaylist(list.mainMediaPl ))
+            print(list.segmentNamesForPlaylist(list.audioPl ))
+        }
         
-        Kitchen.serve(recipe: tabbar)
+        if let tabbar = self.tabbar {
+            Kitchen.reloadTab(atIndex: 0, recipe: tabbar)
+            
+        } else{
+            self.tabbar = KitchenTabBar(items:
+                [CatalogTab(),SearchTab(),SettingsTab()]
+                )
+            Kitchen.serve(recipe: self.tabbar!)
+        }
+        
     }
     
     func applicationWillResignActive(application: UIApplication) {
@@ -225,6 +243,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             Kitchen.serve(recipe: catalog)
         }
         private var catalog: CatalogRecipe {
+            
+            let query = AVUser.query()
+            query.includeKey("M3UList")
+            query.findObjectsInBackgroundWithBlock { (objects, error) in
+                
+            }
+            
             let banner = "Movie"
             let thumbnailUrl = ""//NSBundle.mainBundle().URLForResource("item", withExtension: "jpg")!.absoluteString
             let actionID = "Play_m3u_m3uid"

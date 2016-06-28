@@ -130,12 +130,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F69DB0401CFE7A5500ADA2FE /* Build configuration list for PBXNativeTarget "YouM3U" */;
 			buildPhases = (
-				2DC671937C81D226B6BA8F2B /* 📦 Check Pods Manifest.lock */,
+				2DC671937C81D226B6BA8F2B /* [CP] Check Pods Manifest.lock */,
 				F69DB0151CFE7A5500ADA2FE /* Sources */,
 				F69DB0161CFE7A5500ADA2FE /* Frameworks */,
 				F69DB0171CFE7A5500ADA2FE /* Resources */,
-				F18DF7378C37B99ACCA93D22 /* 📦 Embed Pods Frameworks */,
-				F3837345FC783F393DCFF864 /* 📦 Copy Pods Resources */,
+				F18DF7378C37B99ACCA93D22 /* [CP] Embed Pods Frameworks */,
+				F3837345FC783F393DCFF864 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -201,14 +201,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2DC671937C81D226B6BA8F2B /* 📦 Check Pods Manifest.lock */ = {
+		2DC671937C81D226B6BA8F2B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,14 +216,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		F18DF7378C37B99ACCA93D22 /* 📦 Embed Pods Frameworks */ = {
+		F18DF7378C37B99ACCA93D22 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -231,14 +231,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YouM3U/Pods-YouM3U-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F3837345FC783F393DCFF864 /* 📦 Copy Pods Resources */ = {
+		F3837345FC783F393DCFF864 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
