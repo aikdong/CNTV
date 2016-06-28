@@ -7,37 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		863A25098EA1B2890777245D /* Pods_YouM3U.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42BB8F7075445CB9F2376B17 /* Pods_YouM3U.framework */; };
-		F643F6041CFFE16D0060F5A9 /* Settings.xml in Resources */ = {isa = PBXBuildFile; fileRef = F643F6031CFFE16D0060F5A9 /* Settings.xml */; };
-		F643F6071CFFF8390060F5A9 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F643F6061CFFF8390060F5A9 /* Model.swift */; };
-		F6446FD41CFEBE79004DDC01 /* av-min.js in Resources */ = {isa = PBXBuildFile; fileRef = F6446FD31CFEBE79004DDC01 /* av-min.js */; };
-		F6446FD61CFEC0BE004DDC01 /* AVPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6446FD51CFEC0BE004DDC01 /* AVPlayerController.swift */; };
-		F6446FD91CFEC2ED004DDC01 /* application.js in Resources */ = {isa = PBXBuildFile; fileRef = F6446FD81CFEC2ED004DDC01 /* application.js */; };
-		F677ACFE1CFEB07C001BD57B /* QRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F677ACFD1CFEB07C001BD57B /* QRCode.swift */; };
-		F69DB01D1CFE7A5500ADA2FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69DB01C1CFE7A5500ADA2FE /* AppDelegate.swift */; };
-		F69DB0241CFE7A5500ADA2FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F69DB0221CFE7A5500ADA2FE /* Main.storyboard */; };
-		F69DB0261CFE7A5500ADA2FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F69DB0251CFE7A5500ADA2FE /* Assets.xcassets */; };
-		F69DB04B1CFE947600ADA2FE /* MySearchRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69DB04A1CFE947600ADA2FE /* MySearchRecipe.swift */; };
+		3C5793BA6FC38B0B9C90A18F /* Pods_COCNTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 344AF17B7648C0E96B50D2A8 /* Pods_COCNTV.framework */; };
+		F65F86E31D225D6200D2CF29 /* application.js in Resources */ = {isa = PBXBuildFile; fileRef = F65F86DD1D225D6200D2CF29 /* application.js */; };
+		F65F86E41D225D6200D2CF29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F65F86DE1D225D6200D2CF29 /* Assets.xcassets */; };
+		F65F86E51D225D6200D2CF29 /* av-min.js in Resources */ = {isa = PBXBuildFile; fileRef = F65F86DF1D225D6200D2CF29 /* av-min.js */; };
+		F65F86E71D225D6200D2CF29 /* Settings.xml in Resources */ = {isa = PBXBuildFile; fileRef = F65F86E21D225D6200D2CF29 /* Settings.xml */; };
+		F65F86E91D225D7500D2CF29 /* QRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65F86E81D225D7500D2CF29 /* QRCode.swift */; };
+		F65F86EE1D225D8100D2CF29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65F86EA1D225D8100D2CF29 /* AppDelegate.swift */; };
+		F65F86EF1D225D8100D2CF29 /* AVPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65F86EB1D225D8100D2CF29 /* AVPlayerController.swift */; };
+		F65F86F01D225D8100D2CF29 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65F86EC1D225D8100D2CF29 /* Model.swift */; };
+		F65F86F11D225D8100D2CF29 /* MySearchRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65F86ED1D225D8100D2CF29 /* MySearchRecipe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		42BB8F7075445CB9F2376B17 /* Pods_YouM3U.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YouM3U.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		89C69EA01B4CA2222CCB6922 /* Pods-YouM3U.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouM3U.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YouM3U/Pods-YouM3U.debug.xcconfig"; sourceTree = "<group>"; };
-		D995C18D0050148D2F660B92 /* Pods-YouM3U.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouM3U.release.xcconfig"; path = "Pods/Target Support Files/Pods-YouM3U/Pods-YouM3U.release.xcconfig"; sourceTree = "<group>"; };
-		F643F6031CFFE16D0060F5A9 /* Settings.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Settings.xml; sourceTree = "<group>"; };
-		F643F6061CFFF8390060F5A9 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		F6446FD31CFEBE79004DDC01 /* av-min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "av-min.js"; sourceTree = "<group>"; };
-		F6446FD51CFEC0BE004DDC01 /* AVPlayerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVPlayerController.swift; sourceTree = "<group>"; };
-		F6446FD81CFEC2ED004DDC01 /* application.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = application.js; sourceTree = "<group>"; };
-		F6446FDF1CFED5DA004DDC01 /* YouM3U-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YouM3U-Bridging-Header.h"; sourceTree = "<group>"; };
-		F677ACFD1CFEB07C001BD57B /* QRCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCode.swift; sourceTree = "<group>"; };
-		F69DB0191CFE7A5500ADA2FE /* YouM3U.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouM3U.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F69DB01C1CFE7A5500ADA2FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F69DB0231CFE7A5500ADA2FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F69DB0251CFE7A5500ADA2FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F69DB0271CFE7A5500ADA2FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F69DB0491CFE7D1C00ADA2FE /* YouM3U.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = YouM3U.entitlements; sourceTree = "<group>"; };
-		F69DB04A1CFE947600ADA2FE /* MySearchRecipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySearchRecipe.swift; sourceTree = "<group>"; };
+		344AF17B7648C0E96B50D2A8 /* Pods_COCNTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_COCNTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87A7BA18FA3558AC8B340988 /* Pods-COCNTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COCNTV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-COCNTV/Pods-COCNTV.debug.xcconfig"; sourceTree = "<group>"; };
+		AA826CADE38B76FD24F00FE2 /* Pods-COCNTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COCNTV.release.xcconfig"; path = "Pods/Target Support Files/Pods-COCNTV/Pods-COCNTV.release.xcconfig"; sourceTree = "<group>"; };
+		F65F86DD1D225D6200D2CF29 /* application.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = application.js; path = COCNTV/application.js; sourceTree = SOURCE_ROOT; };
+		F65F86DE1D225D6200D2CF29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = COCNTV/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		F65F86DF1D225D6200D2CF29 /* av-min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = "av-min.js"; path = "COCNTV/av-min.js"; sourceTree = SOURCE_ROOT; };
+		F65F86E01D225D6200D2CF29 /* COCNTV-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "COCNTV-Bridging-Header.h"; path = "COCNTV/COCNTV-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		F65F86E11D225D6200D2CF29 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = COCNTV/Info.plist; sourceTree = SOURCE_ROOT; };
+		F65F86E21D225D6200D2CF29 /* Settings.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Settings.xml; path = COCNTV/Settings.xml; sourceTree = SOURCE_ROOT; };
+		F65F86E81D225D7500D2CF29 /* QRCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QRCode.swift; path = COCNTV/QRCode.swift; sourceTree = SOURCE_ROOT; };
+		F65F86EA1D225D8100D2CF29 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = COCNTV/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		F65F86EB1D225D8100D2CF29 /* AVPlayerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AVPlayerController.swift; path = COCNTV/AVPlayerController.swift; sourceTree = SOURCE_ROOT; };
+		F65F86EC1D225D8100D2CF29 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Model.swift; path = COCNTV/Model.swift; sourceTree = SOURCE_ROOT; };
+		F65F86ED1D225D8100D2CF29 /* MySearchRecipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MySearchRecipe.swift; path = COCNTV/MySearchRecipe.swift; sourceTree = SOURCE_ROOT; };
+		F69DB0191CFE7A5500ADA2FE /* COCNTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = COCNTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				863A25098EA1B2890777245D /* Pods_YouM3U.framework in Frameworks */,
+				3C5793BA6FC38B0B9C90A18F /* Pods_COCNTV.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,7 +52,7 @@
 		D5F20B419B57B975C16FCF9F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				42BB8F7075445CB9F2376B17 /* Pods_YouM3U.framework */,
+				344AF17B7648C0E96B50D2A8 /* Pods_COCNTV.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -63,7 +60,7 @@
 		F6446FD21CFEB597004DDC01 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				F677ACFD1CFEB07C001BD57B /* QRCode.swift */,
+				F65F86E81D225D7500D2CF29 /* QRCode.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -71,13 +68,12 @@
 		F6446FD71CFEC2BC004DDC01 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				F6446FD81CFEC2ED004DDC01 /* application.js */,
-				F6446FD31CFEBE79004DDC01 /* av-min.js */,
-				F69DB0251CFE7A5500ADA2FE /* Assets.xcassets */,
-				F69DB0271CFE7A5500ADA2FE /* Info.plist */,
-				F6446FDF1CFED5DA004DDC01 /* YouM3U-Bridging-Header.h */,
-				F69DB0491CFE7D1C00ADA2FE /* YouM3U.entitlements */,
-				F643F6031CFFE16D0060F5A9 /* Settings.xml */,
+				F65F86DD1D225D6200D2CF29 /* application.js */,
+				F65F86DE1D225D6200D2CF29 /* Assets.xcassets */,
+				F65F86DF1D225D6200D2CF29 /* av-min.js */,
+				F65F86E01D225D6200D2CF29 /* COCNTV-Bridging-Header.h */,
+				F65F86E11D225D6200D2CF29 /* Info.plist */,
+				F65F86E21D225D6200D2CF29 /* Settings.xml */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -85,7 +81,7 @@
 		F69DB0101CFE7A5500ADA2FE = {
 			isa = PBXGroup;
 			children = (
-				F69DB01B1CFE7A5500ADA2FE /* YouM3U */,
+				F69DB01B1CFE7A5500ADA2FE /* COCNTV */,
 				F69DB01A1CFE7A5500ADA2FE /* Products */,
 				F8A37FB8096BFA6AE7104A40 /* Pods */,
 				D5F20B419B57B975C16FCF9F /* Frameworks */,
@@ -95,30 +91,30 @@
 		F69DB01A1CFE7A5500ADA2FE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F69DB0191CFE7A5500ADA2FE /* YouM3U.app */,
+				F69DB0191CFE7A5500ADA2FE /* COCNTV.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F69DB01B1CFE7A5500ADA2FE /* YouM3U */ = {
+		F69DB01B1CFE7A5500ADA2FE /* COCNTV */ = {
 			isa = PBXGroup;
 			children = (
-				F69DB01C1CFE7A5500ADA2FE /* AppDelegate.swift */,
-				F6446FD51CFEC0BE004DDC01 /* AVPlayerController.swift */,
-				F69DB04A1CFE947600ADA2FE /* MySearchRecipe.swift */,
-				F643F6061CFFF8390060F5A9 /* Model.swift */,
+				F65F86EA1D225D8100D2CF29 /* AppDelegate.swift */,
+				F65F86EB1D225D8100D2CF29 /* AVPlayerController.swift */,
+				F65F86EC1D225D8100D2CF29 /* Model.swift */,
+				F65F86ED1D225D8100D2CF29 /* MySearchRecipe.swift */,
 				F6446FD21CFEB597004DDC01 /* Utils */,
-				F69DB0221CFE7A5500ADA2FE /* Main.storyboard */,
 				F6446FD71CFEC2BC004DDC01 /* Supporting Files */,
 			);
+			name = COCNTV;
 			path = YouM3U;
 			sourceTree = "<group>";
 		};
 		F8A37FB8096BFA6AE7104A40 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				89C69EA01B4CA2222CCB6922 /* Pods-YouM3U.debug.xcconfig */,
-				D995C18D0050148D2F660B92 /* Pods-YouM3U.release.xcconfig */,
+				87A7BA18FA3558AC8B340988 /* Pods-COCNTV.debug.xcconfig */,
+				AA826CADE38B76FD24F00FE2 /* Pods-COCNTV.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -126,9 +122,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F69DB0181CFE7A5500ADA2FE /* YouM3U */ = {
+		F69DB0181CFE7A5500ADA2FE /* COCNTV */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F69DB0401CFE7A5500ADA2FE /* Build configuration list for PBXNativeTarget "YouM3U" */;
+			buildConfigurationList = F69DB0401CFE7A5500ADA2FE /* Build configuration list for PBXNativeTarget "COCNTV" */;
 			buildPhases = (
 				2DC671937C81D226B6BA8F2B /* [CP] Check Pods Manifest.lock */,
 				F69DB0151CFE7A5500ADA2FE /* Sources */,
@@ -141,9 +137,9 @@
 			);
 			dependencies = (
 			);
-			name = YouM3U;
+			name = COCNTV;
 			productName = YouM3U;
-			productReference = F69DB0191CFE7A5500ADA2FE /* YouM3U.app */;
+			productReference = F69DB0191CFE7A5500ADA2FE /* COCNTV.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -161,13 +157,13 @@
 						DevelopmentTeam = 4L947GWPGW;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
 				};
 			};
-			buildConfigurationList = F69DB0141CFE7A5500ADA2FE /* Build configuration list for PBXProject "YouM3U" */;
+			buildConfigurationList = F69DB0141CFE7A5500ADA2FE /* Build configuration list for PBXProject "COCNTV" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -180,7 +176,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F69DB0181CFE7A5500ADA2FE /* YouM3U */,
+				F69DB0181CFE7A5500ADA2FE /* COCNTV */,
 			);
 		};
 /* End PBXProject section */
@@ -190,11 +186,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F643F6041CFFE16D0060F5A9 /* Settings.xml in Resources */,
-				F69DB0261CFE7A5500ADA2FE /* Assets.xcassets in Resources */,
-				F6446FD91CFEC2ED004DDC01 /* application.js in Resources */,
-				F6446FD41CFEBE79004DDC01 /* av-min.js in Resources */,
-				F69DB0241CFE7A5500ADA2FE /* Main.storyboard in Resources */,
+				F65F86E71D225D6200D2CF29 /* Settings.xml in Resources */,
+				F65F86E31D225D6200D2CF29 /* application.js in Resources */,
+				F65F86E51D225D6200D2CF29 /* av-min.js in Resources */,
+				F65F86E41D225D6200D2CF29 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,7 +223,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YouM3U/Pods-YouM3U-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-COCNTV/Pods-COCNTV-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F3837345FC783F393DCFF864 /* [CP] Copy Pods Resources */ = {
@@ -243,7 +238,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YouM3U/Pods-YouM3U-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-COCNTV/Pods-COCNTV-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -253,26 +248,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F69DB01D1CFE7A5500ADA2FE /* AppDelegate.swift in Sources */,
-				F643F6071CFFF8390060F5A9 /* Model.swift in Sources */,
-				F69DB04B1CFE947600ADA2FE /* MySearchRecipe.swift in Sources */,
-				F677ACFE1CFEB07C001BD57B /* QRCode.swift in Sources */,
-				F6446FD61CFEC0BE004DDC01 /* AVPlayerController.swift in Sources */,
+				F65F86EE1D225D8100D2CF29 /* AppDelegate.swift in Sources */,
+				F65F86F11D225D8100D2CF29 /* MySearchRecipe.swift in Sources */,
+				F65F86EF1D225D8100D2CF29 /* AVPlayerController.swift in Sources */,
+				F65F86E91D225D7500D2CF29 /* QRCode.swift in Sources */,
+				F65F86F01D225D8100D2CF29 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		F69DB0221CFE7A5500ADA2FE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F69DB0231CFE7A5500ADA2FE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F69DB03E1CFE7A5500ADA2FE /* Debug */ = {
@@ -360,41 +344,43 @@
 		};
 		F69DB0411CFE7A5500ADA2FE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89C69EA01B4CA2222CCB6922 /* Pods-YouM3U.debug.xcconfig */;
+			baseConfigurationReference = 87A7BA18FA3558AC8B340988 /* Pods-COCNTV.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = YouM3U/YouM3U.entitlements;
-				INFOPLIST_FILE = YouM3U/Info.plist;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "$(SRCROOT)/COCNTV/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.feeltrue.YouM3U;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "YouM3U/YouM3U-Bridging-Header.h";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.feeltrue.COCNTV;
+				PRODUCT_NAME = COCNTV;
+				SWIFT_OBJC_BRIDGING_HEADER = "COCNTV/COCNTV-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		F69DB0421CFE7A5500ADA2FE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D995C18D0050148D2F660B92 /* Pods-YouM3U.release.xcconfig */;
+			baseConfigurationReference = AA826CADE38B76FD24F00FE2 /* Pods-COCNTV.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = YouM3U/YouM3U.entitlements;
-				INFOPLIST_FILE = YouM3U/Info.plist;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "$(SRCROOT)/COCNTV/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.feeltrue.YouM3U;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "YouM3U/YouM3U-Bridging-Header.h";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.feeltrue.COCNTV;
+				PRODUCT_NAME = COCNTV;
+				SWIFT_OBJC_BRIDGING_HEADER = "COCNTV/COCNTV-Bridging-Header.h";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F69DB0141CFE7A5500ADA2FE /* Build configuration list for PBXProject "YouM3U" */ = {
+		F69DB0141CFE7A5500ADA2FE /* Build configuration list for PBXProject "COCNTV" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F69DB03E1CFE7A5500ADA2FE /* Debug */,
@@ -403,7 +389,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F69DB0401CFE7A5500ADA2FE /* Build configuration list for PBXNativeTarget "YouM3U" */ = {
+		F69DB0401CFE7A5500ADA2FE /* Build configuration list for PBXNativeTarget "COCNTV" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F69DB0411CFE7A5500ADA2FE /* Debug */,

@@ -1,7 +1,7 @@
 platform :tvos, '9.0'
 use_frameworks!
 
-target 'YouM3U' do
+target 'COCNTV' do
   pod 'TVMLKitchen'
   pod 'Prephirences'
   pod 'AVOSCloud-tvOS'

@@ -2,9 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:YouM3U.xcodeproj">
+      location = "group:/Users/don/Workspace/tvOS/COCNTV/COCNTV.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:COCNTV.xcodeproj">
    </FileRef>
 </Workspace>
