@@ -1,0 +1,330 @@
+#EXTM3U
+#EXTINF:-1 tvg-logo="http://7xsk44.com2.z0.glb.clouddn.com/cctv1.jpg" group-title="1>CCTV", CCTV 1-综合
+cctv1
+
+#EXTINF:-1 tvg-logo="http://7xsk44.com2.z0.glb.clouddn.com/cctv2.jpg" group-title="1>CCTV", CCTV 2-财经
+cctv2
+
+#EXTINF:-1 tvg-logo="http://7xsk44.com2.z0.glb.clouddn.com/cctv3.jpg" group-title="1>CCTV", CCTV 3-综艺
+cctv3
+
+#EXTINF:-1 tvg-logo="http://7xsk44.com2.z0.glb.clouddn.com/cctv4.jpg" group-title="1>CCTV", CCTV 4-中文国际
+cctv4
+
+#EXTINF:-1 tvg-logo="http://7xsk44.com2.z0.glb.clouddn.com/cctv5.jpg" group-title="1>CCTV", CCTV 5-体育
+cctv5
+
+#EXTINF:-1 tvg-logo="http://7xsk44.com2.z0.glb.clouddn.com/cctv6.jpg" group-title="1>CCTV", CCTV 6-电影
+cctv6
+
+#EXTINF:-1 tvg-logo="http://7xsk44.com2.z0.glb.clouddn.com/cctv7.jpg" group-title="1>CCTV", CCTV 7-军事农业
+cctv7
+
+#EXTINF:-1 tvg-logo="http://7xsk44.com2.z0.glb.clouddn.com/cctv8.jpg" group-title="1>CCTV", CCTV 8-电视剧
+cctv8
+
+#EXTINF:-1 tvg-logo="http://7xsk44.com2.z0.glb.clouddn.com/cctv9.jpg" group-title="1>CCTV", CCTV 9-记录
+cctvjilu
+
+#EXTINF:-1 tvg-logo="http://7xsk44.com2.z0.glb.clouddn.com/cctv10.jpg" group-title="1>CCTV", CCTV 10-科教
+cctv10
+
+#EXTINF:-1 tvg-logo="http://7xsk44.com2.z0.glb.clouddn.com/cctv11.jpg" group-title="1>CCTV", CCTV 11-戏曲
+cctv11
+
+#EXTINF:-1 tvg-logo="http://7xsk44.com2.z0.glb.clouddn.com/cctv12.jpg" group-title="1>CCTV", CCTV 12-社会与法
+cctv12
+
+#EXTINF:-1 tvg-logo="http://7xsk44.com2.z0.glb.clouddn.com/cctv13.jpg" group-title="1>CCTV", CCTV 13-新闻
+cctv13
+
+#EXTINF:-1 tvg-logo="http://7xsk44.com2.z0.glb.clouddn.com/cctv14.jpg" group-title="1>CCTV", CCTV 14-少儿
+cctvchild
+
+#EXTINF:-1 tvg-logo="http://7xsk44.com2.z0.glb.clouddn.com/cctv15.jpg" group-title="1>CCTV", CCTV 15-音乐
+cctv15
+
+#EXTINF:-1 tvg-logo="http://blogs.nottingham.ac.uk/chinesestudies/files/2014/11/CCTV-Logo.jpg" group-title="1>CCTV", CCTV NEWS
+cctv9
+
+#EXTINF:-1 tvg-logo="http://7xsk44.com2.z0.glb.clouddn.com/cctv5+.jpg" group-title="1>CCTV", CCTV 5-体育+
+cctv5plus
+
+#EXTINF:-1 tvg-logo="http://7xsk44.com2.z0.glb.clouddn.com/ahws.jpg" group-title="2>CN卫视", 安徽卫视
+anhui
+
+#EXTINF:-1 tvg-logo="http://7xsk44.com2.z0.glb.clouddn.com/bjws.jpg" group-title="2>CN卫视", 北京卫视
+btv1
+
+#EXTINF:-1 group-title="2>CN卫视", 重庆卫视
+chongqing
+
+#EXTINF:-1 group-title="2>CN卫视", 东方卫视
+dongfang
+
+#EXTINF:-1 group-title="2>CN卫视", 东南卫视
+dongnan
+
+#EXTINF:-1 group-title="2>CN卫视", 广东卫视
+guangdong
+
+#EXTINF:-1 group-title="2>CN卫视", 广西卫视
+guangxi
+
+#EXTINF:-1 group-title="2>CN卫视", 甘肃卫视
+gansu
+
+#EXTINF:-1 group-title="2>CN卫视", 贵州卫视
+guizhou
+
+#EXTINF:-1 group-title="2>CN卫视", 河北卫视
+hebei
+
+#EXTINF:-1 group-title="2>CN卫视", 河南卫视
+henan
+
+#EXTINF:-1 group-title="2>CN卫视", 黑龙江卫视
+heilongjiang
+
+#EXTINF:-1 group-title="2>CN卫视", 湖北卫视
+hubei
+
+#EXTINF:-1 group-title="2>CN卫视", 吉林卫视
+jilin
+
+#EXTINF:-1 group-title="2>CN卫视", 江西卫视
+jiangxi
+
+#EXTINF:-1 group-title="2>CN卫视", 康巴卫视
+kangba
+
+#EXTINF:-1 group-title="2>CN卫视", 辽宁卫视
+liaoning
+
+#EXTINF:-1 group-title="2>CN卫视", 旅游卫视
+travel
+
+#EXTINF:-1 group-title="2>CN卫视", 内蒙古卫视
+neimenggu
+
+#EXTINF:-1 group-title="2>CN卫视", 宁夏卫视
+ningxia
+
+#EXTINF:-1 group-title="2>CN卫视", 青海卫视
+qinghai
+
+#EXTINF:-1 group-title="2>CN卫视", 山东卫视
+shandong
+
+#EXTINF:-1 group-title="2>CN卫视", 山东教育台
+sdetv
+
+#EXTINF:-1 group-title="2>CN卫视", 深圳卫视
+shenzhen
+
+#EXTINF:-1 group-title="2>CN卫视", 陕西卫视
+shan3xi
+
+#EXTINF:-1 group-title="2>CN卫视", 山西卫视
+shan1xi
+
+#EXTINF:-1 group-title="2>CN卫视", 四川卫视
+sichuan
+
+#EXTINF:-1 group-title="2>CN卫视", 天津卫视
+tianjin
+
+#EXTINF:-1 group-title="2>CN卫视", 西藏卫视
+xizang
+
+#EXTINF:-1 group-title="2>CN卫视", 厦门卫视
+xiamen
+
+#EXTINF:-1 group-title="2>CN卫视", 新疆卫视
+xinjiang
+
+#EXTINF:-1 group-title="2>CN卫视", 香港卫视
+xianggangweishi
+
+#EXTINF:-1 group-title="2>CN卫视", 延边卫视
+yanbian
+
+#EXTINF:-1 group-title="2>CN卫视", 云南卫视
+yunnan
+
+#EXTINF:-1 group-title="2>CN卫视", 浙江卫视
+zhejiang
+
+#EXTINF:-1 group-title="2>CN卫视", CCTV中学生
+zhongxuesheng
+
+#EXTINF:-1 group-title="2>CN卫视", CCTV新科动漫
+xinkedongman
+
+#EXTINF:-1 group-title="2>CN卫视", CCTV电视指南
+zhinan
+
+#EXTINF:-1 group-title="2>CN卫视", BTV文艺
+btv2
+
+#EXTINF:-1 group-title="2>CN卫视", BTV科教
+btv3
+
+#EXTINF:-1 group-title="2>CN卫视", BTV影视
+btv4
+
+#EXTINF:-1 group-title="2>CN卫视", BTV财经
+btv5
+
+#EXTINF:-1 group-title="2>CN卫视", BTV体育
+btv6
+
+#EXTINF:-1 group-title="2>CN卫视", BTV生活
+btv7
+
+#EXTINF:-1 group-title="2>CN卫视", BTV青少
+btv8
+
+#EXTINF:-1 group-title="2>CN卫视", BTV新闻
+btv9
+
+#EXTINF:-1 group-title="2>CN卫视", 滨海新闻综合
+tianjinbh
+
+#EXTINF:-1 group-title="2>CN卫视", 滨海综艺频道
+tianjinbh2
+
+#EXTINF:-1 group-title="2>CN卫视", 广西综艺
+gxzy
+
+#EXTINF:-1 group-title="2>CN卫视", 潮州综合
+cztv1
+
+#EXTINF:-1 group-title="2>CN卫视", 潮州公共
+cztv2
+
+#EXTINF:-1 group-title="2>CN卫视", 佛山新闻综合
+foshanxinwen
+
+#EXTINF:-1 group-title="2>CN卫视", 韶关综合
+shaoguanzonghe
+
+#EXTINF:-1 group-title="2>CN卫视", 珠海一套
+zhuhaiyitao
+
+#EXTINF:-1 group-title="2>CN卫视", 珠海二套
+zhuhaiertao
+
+#EXTINF:-1 group-title="2>CN卫视", 成都新闻综合
+cdtv1
+
+#EXTINF:-1 group-title="2>CN卫视", 成都公共
+cdtv5
+
+#EXTINF:-1 group-title="2>CN卫视", 大连一套
+daliannews
+
+#EXTINF:-1 group-title="2>CN卫视", 湖北公共
+hubeigonggong
+
+#EXTINF:-1 group-title="2>CN卫视", 湖北教育
+hubeijiaoyu
+
+#EXTINF:-1 group-title="2>CN卫视", 湖北影视
+hubeiyingshi
+
+#EXTINF:-1 group-title="2>CN卫视", 湖北经视
+hubeijingshi
+
+#EXTINF:-1 group-title="2>CN卫视", 荆州新闻频道
+jznews
+
+#EXTINF:-1 group-title="2>CN卫视", 湖北垄上频道
+jzlongs
+
+#EXTINF:-1 group-title="2>CN卫视", 襄阳广播电视台
+xiangyangtai
+
+#EXTINF:-1 group-title="2>CN卫视", 维语新闻综合
+xjtv2
+
+#EXTINF:-1 group-title="2>CN卫视", 哈语新闻综合
+xjtv3
+
+#EXTINF:-1 group-title="2>CN卫视", 维语综艺
+xjtv5
+
+#EXTINF:-1 group-title="2>CN卫视", 哈语综艺
+xjtv8
+
+#EXTINF:-1 group-title="2>CN卫视", 维语经济生活
+xjtv9
+
+#EXTINF:-1 group-title="2>CN卫视", 石家庄三套
+shijiazhuangsantao
+
+#EXTINF:-1 group-title="2>CN卫视", 邢台综合
+xingtaizonghe
+
+#EXTINF:-1 group-title="2>CN卫视", 邢台生活
+xingtaishenghuo
+
+#EXTINF:-1 group-title="2>CN卫视", 邢台公共
+xingtaigonggong
+
+#EXTINF:-1 group-title="2>CN卫视", 邢台沙河
+xingtaishahe
+
+#EXTINF:-1 group-title="2>CN卫视", 济南新闻
+jinannews
+
+#EXTINF:-1 group-title="2>CN卫视", 丽江综合频道
+lijiangnews
+
+#EXTINF:-1 group-title="2>CN卫视", 丽江公共频道
+lijiangpublic
+
+#EXTINF:-1 group-title="2>CN卫视", 蒙语频道
+neimenggu2
+
+#EXTINF:-1 group-title="2>CN卫视", 南京新闻
+nanjingnews
+
+#EXTINF:-1 group-title="2>CN卫视", 南通新闻频道
+nantongxinwen
+
+#EXTINF:-1 group-title="2>CN卫视", 南通社教频道
+nantongshejiao
+
+#EXTINF:-1 group-title="2>CN卫视", 宁波一套
+nbtv1
+
+#EXTINF:-1 group-title="2>CN卫视", 宁波二套
+nbtv2
+
+#EXTINF:-1 group-title="2>CN卫视", 宁波三套
+nbtv3
+
+#EXTINF:-1 group-title="2>CN卫视", 宁波四套
+nbtv4
+
+#EXTINF:-1 group-title="2>CN卫视", 宁波五套
+nbtv5
+
+#EXTINF:-1 group-title="2>CN卫视", 上海新闻综合
+shnews
+
+#EXTINF:-1 group-title="2>CN卫视", 厦门一套
+xiamen1
+
+#EXTINF:-1 group-title="2>CN卫视", 厦门二套
+xiamen2
+
+#EXTINF:-1 group-title="2>CN卫视", 厦门三套
+xiamen3
+
+#EXTINF:-1 group-title="2>CN卫视", 厦门四套
+xiamen4
+
+#EXTINF:-1 group-title="2>CN卫视", 西安新闻
+xiannews
