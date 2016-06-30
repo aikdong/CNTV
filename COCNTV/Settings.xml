@@ -18,9 +18,9 @@
                 <listItemLockup>
                     <title>Refresh</title>
                     <relatedContent>
-                        <lockup actionID="Alert_reloadData">
+                        <lockup actionID="Alert_loadData">
                             <title>Refresh</title>
-                            <description>Refresh your list.</description>
+                            <description>Refresh list.</description>
                         </lockup>
                     </relatedContent>
                 </listItemLockup>
@@ -30,7 +30,7 @@
                         <lockup>
                             <img src="http://aik.synology.me/images/youm3u/about.png" width="857" height="482" />
                             <title>About</title>
-                            <description>About our...</description>
+                            <description>About COCNTV</description>
                         </lockup>
                     </relatedContent>
                 </listItemLockup>

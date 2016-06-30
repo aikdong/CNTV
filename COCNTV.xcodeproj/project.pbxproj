@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		3C5793BA6FC38B0B9C90A18F /* Pods_COCNTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 344AF17B7648C0E96B50D2A8 /* Pods_COCNTV.framework */; };
-		F65F86E31D225D6200D2CF29 /* application.js in Resources */ = {isa = PBXBuildFile; fileRef = F65F86DD1D225D6200D2CF29 /* application.js */; };
+		F65349DB1D236DD40081ED76 /* channels.m3u8 in Resources */ = {isa = PBXBuildFile; fileRef = F65349DA1D236DD40081ED76 /* channels.m3u8 */; };
+		F65349DF1D2514490081ED76 /* PageAVPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65349DE1D2514490081ED76 /* PageAVPlayerController.swift */; };
 		F65F86E41D225D6200D2CF29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F65F86DE1D225D6200D2CF29 /* Assets.xcassets */; };
-		F65F86E51D225D6200D2CF29 /* av-min.js in Resources */ = {isa = PBXBuildFile; fileRef = F65F86DF1D225D6200D2CF29 /* av-min.js */; };
 		F65F86E71D225D6200D2CF29 /* Settings.xml in Resources */ = {isa = PBXBuildFile; fileRef = F65F86E21D225D6200D2CF29 /* Settings.xml */; };
 		F65F86E91D225D7500D2CF29 /* QRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65F86E81D225D7500D2CF29 /* QRCode.swift */; };
 		F65F86EE1D225D8100D2CF29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65F86EA1D225D8100D2CF29 /* AppDelegate.swift */; };
@@ -22,9 +22,9 @@
 		344AF17B7648C0E96B50D2A8 /* Pods_COCNTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_COCNTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87A7BA18FA3558AC8B340988 /* Pods-COCNTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COCNTV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-COCNTV/Pods-COCNTV.debug.xcconfig"; sourceTree = "<group>"; };
 		AA826CADE38B76FD24F00FE2 /* Pods-COCNTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COCNTV.release.xcconfig"; path = "Pods/Target Support Files/Pods-COCNTV/Pods-COCNTV.release.xcconfig"; sourceTree = "<group>"; };
-		F65F86DD1D225D6200D2CF29 /* application.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = application.js; path = COCNTV/application.js; sourceTree = SOURCE_ROOT; };
+		F65349DA1D236DD40081ED76 /* channels.m3u8 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = channels.m3u8; path = COCNTV/channels.m3u8; sourceTree = SOURCE_ROOT; };
+		F65349DE1D2514490081ED76 /* PageAVPlayerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PageAVPlayerController.swift; path = COCNTV/PageAVPlayerController.swift; sourceTree = SOURCE_ROOT; };
 		F65F86DE1D225D6200D2CF29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = COCNTV/Assets.xcassets; sourceTree = SOURCE_ROOT; };
-		F65F86DF1D225D6200D2CF29 /* av-min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = "av-min.js"; path = "COCNTV/av-min.js"; sourceTree = SOURCE_ROOT; };
 		F65F86E01D225D6200D2CF29 /* COCNTV-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "COCNTV-Bridging-Header.h"; path = "COCNTV/COCNTV-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		F65F86E11D225D6200D2CF29 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = COCNTV/Info.plist; sourceTree = SOURCE_ROOT; };
 		F65F86E21D225D6200D2CF29 /* Settings.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Settings.xml; path = COCNTV/Settings.xml; sourceTree = SOURCE_ROOT; };
@@ -66,9 +66,8 @@
 		F6446FD71CFEC2BC004DDC01 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				F65F86DD1D225D6200D2CF29 /* application.js */,
+				F65349DA1D236DD40081ED76 /* channels.m3u8 */,
 				F65F86DE1D225D6200D2CF29 /* Assets.xcassets */,
-				F65F86DF1D225D6200D2CF29 /* av-min.js */,
 				F65F86E01D225D6200D2CF29 /* COCNTV-Bridging-Header.h */,
 				F65F86E11D225D6200D2CF29 /* Info.plist */,
 				F65F86E21D225D6200D2CF29 /* Settings.xml */,
@@ -99,6 +98,7 @@
 			children = (
 				F65F86EA1D225D8100D2CF29 /* AppDelegate.swift */,
 				F65F86EB1D225D8100D2CF29 /* AVPlayerController.swift */,
+				F65349DE1D2514490081ED76 /* PageAVPlayerController.swift */,
 				F65F86ED1D225D8100D2CF29 /* MySearchRecipe.swift */,
 				F6446FD21CFEB597004DDC01 /* Utils */,
 				F6446FD71CFEC2BC004DDC01 /* Supporting Files */,
@@ -184,8 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F65F86E71D225D6200D2CF29 /* Settings.xml in Resources */,
-				F65F86E31D225D6200D2CF29 /* application.js in Resources */,
-				F65F86E51D225D6200D2CF29 /* av-min.js in Resources */,
+				F65349DB1D236DD40081ED76 /* channels.m3u8 in Resources */,
 				F65F86E41D225D6200D2CF29 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,6 +248,7 @@
 				F65F86F11D225D8100D2CF29 /* MySearchRecipe.swift in Sources */,
 				F65F86EF1D225D8100D2CF29 /* AVPlayerController.swift in Sources */,
 				F65F86E91D225D7500D2CF29 /* QRCode.swift in Sources */,
+				F65349DF1D2514490081ED76 /* PageAVPlayerController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

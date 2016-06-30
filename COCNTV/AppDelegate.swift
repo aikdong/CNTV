@@ -10,6 +10,8 @@ import UIKit
 import TVMLKitchen
 import JavaScriptCore
 import Prephirences
+import SwiftyJSON
+import Alamofire
 import M3U8Kit2
 
 @UIApplicationMain
@@ -28,29 +30,45 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func loadData() {
-
-        let model: M3U8PlaylistModel?
-        do {
-            try model = M3U8PlaylistModel(URL: "http://localhost:8002/playlist.m3u8")
-        } catch {
-            print(error)
-            model = nil
-        }
-        
-        if let list = model {
-            print( list.segmentNamesForPlaylist( list.mainMediaPl ))
-            print( list.segmentNamesForPlaylist( list.audioPl ))
-        }
-        
         if let tabbar = self.tabbar {
             Kitchen.reloadTab(atIndex: 0, recipe: tabbar)
         } else{
-            self.tabbar = KitchenTabBar(items:
-                [CatalogTab(),SearchTab(),SettingsTab()]
-                )
+            self.tabbar = KitchenTabBar(items:[CatalogTab(),SearchTab(),SettingsTab()])
             Kitchen.serve(recipe: self.tabbar!)
         }
+    }
+    
+    func playJSON(json: JSON) {
         
+        if json["ack"] == "yes" {
+            
+//            let videoType = ["flv","hls","hds"]
+            let videoType = ["hls"]
+
+            var urls = [NSURL]()
+            
+            for type in videoType {
+                let item_url = json["\(type)_url"]
+                for i in 1...5 {
+                    let url = item_url["\(type)\(i)"].stringValue
+                    if  !url.isEmpty {
+                        print("\(type)\(i):\(url)")
+                        urls.append(NSURL(string: url)!)
+                    }
+                }
+            }
+            
+            dispatch_async(dispatch_get_main_queue()) {
+                let pagePlayerController = PageAVPlayerController(urls: urls)
+                Kitchen.navigationController.presentViewController(pagePlayerController, animated: true, completion:nil)
+            }
+            
+        }else{
+            let button = AlertButton(title: "OK",actionID: "Alert_OK")
+            let alert = AlertRecipe(title: "Can not play", description:  "Can not play this channel", buttons: [button], presentationType: .Modal)
+            Kitchen.serve(recipe: alert)
+            
+        }
     }
     
     func applicationWillResignActive(application: UIApplication) {
@@ -129,22 +147,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                         return
                     }
                 }else if action == "Play" {
-                    let type = actionComponents[1]
-                    let m3u8Id = actionComponents[2]
-                    
-                    let alert = AlertRecipe(title: "Play \(type)", description: m3u8Id, buttons: [AlertButton(title: "OK", actionID: "Alert_OK")], presentationType: PresentationType.Modal)
-                    
-                    Kitchen.serve(recipe:alert)
-                    
-                }else if action == "Open" {
-                    
-                        self.openViewController(action)
-                    
+                    let channel = actionComponents[1]
+                    Alamofire.request(.GET, "http://vdn.live.cntv.cn/api2/liveHtml5.do?client=html5&channel=pa://cctv_p2p_hd"+channel)
+                        .validate()
+                        .responseString { response in
+                            switch response.result {
+                            case .Success:
+                                if let JSONString = response.result.value {
+                                    let start = JSONString.rangeOfString("{")!
+                                    let end = JSONString.rangeOfString("}", options: .BackwardsSearch)!
+
+                                    if let dataFromString = JSONString.substringWithRange(start.startIndex ... end.startIndex).dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false) {
+                                        let json = JSON(data: dataFromString)
+                                        
+                                        self.playJSON(json)
+                                    }
+
+                                }
+                                
+                            case .Failure(let error):
+                                print(error)
+                            }
+                    }
                 }
             }
         }
         cookbook.playActionIDHandler = {actionID in
-            print(actionID)
+            
         }
         cookbook.httpHeaders = [
             "Content-Type": "application/json"
@@ -190,24 +219,39 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             Kitchen.serve(recipe: catalog)
         }
         private var catalog: CatalogRecipe {
+
+            let model: M3U8PlaylistModel?
+            do {
+                let channelString = try String(contentsOfFile: NSBundle.mainBundle().pathForResource("channels", ofType: "m3u8")!, encoding: NSUTF8StringEncoding);
+                try model = M3U8PlaylistModel(string: channelString, baseURL: "http://vdn.live.cntv.cn/api2/liveHtml5.do?client=html5&channel=pa://cctv_p2p_hd")
+            } catch {
+                print(error)
+                model = nil
+            }
             
-            let banner = "Movie"
-            let thumbnailUrl = ""//NSBundle.mainBundle().URLForResource("item", withExtension: "jpg")!.absoluteString
-            let actionID = "Play_m3u_m3uid"
-            let (width, height) = (250, 376)
-            let templateURL: String? = nil
-            let content: Section.ContentTuple = ("Star Wars", thumbnailUrl, actionID, templateURL, width, height)
-            let section1 = Section(title: "Section 1", args: (0...100).map{_ in content})
-            var catalog = CatalogRecipe(banner: banner, sections: (0...10).map{_ in section1})
+            var sections = [Section]()
+            
+            if let model = model {
+                let (width, height) = (376, 250)
+                
+                var contents: Array<Section.ContentTuple> = []
+                
+                for i in 0..<model.mainMediaPl.segmentList.count {
+                    
+                    if let sinfo = model.mainMediaPl.segmentList.segmentInfoAtIndex(i){
+
+                        let content = Section.ContentTuple(sinfo.title, sinfo.tvgLogo, "Play_"+sinfo.URI, nil, width, height)
+                        
+                        contents.append(content)
+                    }
+                }
+                let section = Section(title: "Section", args: contents)
+                sections.append(section)
+            }
+            
+            var catalog = CatalogRecipe(banner: "Channels", sections: sections)
             catalog.presentationType = .Tab
             return catalog
         }
     }
-    
-    private func openViewController(identifier: String) {
-        let sb = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
-        let vc = sb.instantiateInitialViewController()!
-        Kitchen.navigationController.pushViewController(vc, animated: true)
-    }
 }
-

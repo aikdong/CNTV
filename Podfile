@@ -5,4 +5,6 @@ target 'COCNTV' do
   pod 'TVMLKitchen'
   pod 'Prephirences'
   pod 'M3U8Kit2'
+  pod 'SwiftyJSON'
+  pod 'Alamofire', '~> 3.4'
 end
