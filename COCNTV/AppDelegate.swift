@@ -43,6 +43,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if json["ack"] == "yes" {
             
 //            let videoType = ["flv","hls","hds"]
+            // hls = "HTTP Live Streaming"
+            // https://developer.apple.com/streaming
             let videoType = ["hls"]
 
             var urls = [NSURL]()
@@ -65,7 +67,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
         }else{
             let button = AlertButton(title: "OK",actionID: "Alert_OK")
-            let alert = AlertRecipe(title: "Can not play", description:  "Can not play this channel", buttons: [button], presentationType: .Modal)
+            let alert = AlertRecipe(title: "Can't play", description:  "Can not play this channel", buttons: [button], presentationType: .Modal)
             Kitchen.serve(recipe: alert)
             
         }
