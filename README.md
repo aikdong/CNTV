@@ -1,4 +1,4 @@
-##This is a sample player for CNTV on Apple TV4 (tvOS), build on TVMLKitchen.
+##This is a sample player of China's CNTV for Apple TV4 (tvOS), build on TVMLKitchen.
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat
             )](http://mit-license.org)
