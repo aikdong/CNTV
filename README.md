@@ -1,6 +1,5 @@
 ###This is a CNTV player sample for tvOS, build on TVMLKitchen.
 
-# Run #
 
 ## Using Cocoapods ##
 [CocoaPods](https://cocoapods.org/) is a centralized dependency manager for
