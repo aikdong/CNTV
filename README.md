@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat
             )](http://mit-license.org)
-[![Platform](http://img.shields.io/badge/platform-tvos.svg?style=flat
+[![Platform](https://img.shields.io/badge/partform-tvOS-red.svg?style=flat
              )](https://developer.apple.com/resources/)
 
 ## Using Cocoapods ##
